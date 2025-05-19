@@ -1,0 +1,14 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [],
+  "rewrites": [],
+  "headers": [],
+  "static": {
+    "headers": {
+      "/*": {
+        "cache-control": "public,max-age=0,must-revalidate"
+      }
+    }
+  }
+}
