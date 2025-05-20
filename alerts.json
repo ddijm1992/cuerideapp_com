@@ -1,0 +1,20 @@
+{
+  "last_sync": "2025-05-20T08:47:21.808924",
+  "alerts": [
+    {
+      "entity": "CueRide",
+      "type": "info",
+      "message": "SubAgent executed normally."
+    },
+    {
+      "entity": "Cuelytics",
+      "type": "warning",
+      "message": "Forecast score volatility increasing."
+    },
+    {
+      "entity": "QSN",
+      "type": "error",
+      "message": "Stale logic path detected. Agent rerun required."
+    }
+  ]
+}
