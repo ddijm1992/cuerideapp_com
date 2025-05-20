@@ -3,41 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sober rideshare for tournaments & recovery networks." />
   <title>CueRide – Powered by Cueverse</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <meta name="description" content="CueRide provides safe, sober transportation to cue sports players, recovery communities, and local leagues." />
+  <meta property="og:title" content="CueRide – Powered by Cueverse" />
+  <meta property="og:description" content="CueRide provides safe, sober transportation to cue sports players, recovery communities, and local leagues." />
+  <meta property="og:image" content="https://cueverse.org/og-image.jpg" />
+  <meta property="og:url" content="https://cuerideapp.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <div class="hero">
-      <h1>CueRide</h1>
-      <p class="tagline">Sober rideshare for tournaments & recovery networks.</p>
-      <a href="#about" class="cta-button">Learn More</a>
-    </div>
+<body class="bg-slate-950 text-white font-sans antialiased">
+  <header class="bg-slate-900 border-b border-slate-800 px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-green-400">CueRide</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="#about" class="hover:text-green-300">About</a>
+      <a href="#ai" class="hover:text-green-300">Live AI</a>
+      <a href="#contact" class="hover:text-green-300">Contact</a>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About CueRide</h2>
-    <p>Sober rideshare for tournaments & recovery networks.</p>
-  </section>
+  <main>
+    <section class="text-center py-20 px-6">
+      <h2 class="text-4xl font-bold mb-4">Sober rideshare for tournaments & recovery.</h2>
+      <p class="text-lg max-w-2xl mx-auto text-slate-400">CueRide provides safe, sober transportation to cue sports players, recovery communities, and local leagues.</p>
+    </section>
 
-  <section id="ai">
-    <h2>📊 AI Sync</h2>
-    <div id="ai-feed"></div>
-    <script src="https://cueverse-monitor.vercel.app/loop_feed.js"></script>
-  </section>
+    <section id="ai" class="py-16 px-6">
+      <h2 class="text-2xl font-bold mb-6 text-center">📊 Live AI Sync</h2>
+      <div id="ai-feed" class="max-w-2xl mx-auto"></div>
+      <script src="https://cueverse-monitor.vercel.app/loop_feed.js"></script>
+    </section>
 
-  <footer>
-    <p>© 2025 CueRide | A Cueverse Brand</p>
-    <nav>
-      <a href="https://cueverse.org">Cueverse</a>
-      <a href="https://cuerideapp.com">CueRide</a>
-      <a href="https://cuelytics.tech">Cuelytics</a>
-      <a href="https://qsntv.live">QSN</a>
-      <a href="https://offtherails.bet">Off The Rails</a>
-      <a href="https://cueridecares.org">CueRide Cares</a>
-    </nav>
+    <section id="contact" class="bg-slate-900 py-16 px-6">
+      <h2 class="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+      <form action="https://formspree.io/f/xgebvljk" method="POST" class="max-w-lg mx-auto space-y-4">
+        <input type="email" name="email" placeholder="Your email" required class="w-full p-3 rounded bg-slate-800 text-white border border-slate-700" />
+        <textarea name="message" placeholder="Your message" required class="w-full p-3 rounded bg-slate-800 text-white border border-slate-700 h-32"></textarea>
+        <button type="submit" class="bg-green-400 text-slate-950 font-semibold py-2 px-4 rounded hover:bg-green-300">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-black py-6 text-center text-sm text-slate-500">
+    © 2025 CueRide | A Cueverse Brand
   </footer>
 </body>
 </html>
