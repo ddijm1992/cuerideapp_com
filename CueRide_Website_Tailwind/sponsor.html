@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sponsor a Ride – CueRide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+    <h2 class="text-2xl font-semibold mb-4">Sponsor a Ride</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+      <input type="text" name="sponsor_name" placeholder="Your Name" required class="w-full border px-4 py-2 rounded"/>
+      <input type="email" name="sponsor_email" placeholder="Your Email" required class="w-full border px-4 py-2 rounded"/>
+      <input type="text" name="rider_name" placeholder="Rider’s Name" class="w-full border px-4 py-2 rounded"/>
+      <textarea name="message" placeholder="Why are you sponsoring this ride?" class="w-full border px-4 py-2 rounded"></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Sponsorship</button>
+    </form>
+  </div>
+</body>
+</html>
