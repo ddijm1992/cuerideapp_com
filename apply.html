@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Apply to Drive – CueRide</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44516T9388"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-44516T9388');
+</script>
 </head>
 <body class="bg-gray-100 p-8">
   <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
     <h2 class="text-2xl font-semibold mb-4">Become a CueRide Driver</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4" onsubmit="gtag('event', 'driver_form_submitted', { event_category: 'Forms', event_label: 'Driver Application'});">
       <input type="text" name="name" placeholder="Full Name" required class="w-full border px-4 py-2 rounded"/>
       <input type="email" name="email" placeholder="Email" required class="w-full border px-4 py-2 rounded"/>
       <input type="tel" name="phone" placeholder="Phone Number" class="w-full border px-4 py-2 rounded"/>
