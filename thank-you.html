@@ -1,19 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thank You | CueRide</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-green-50 text-gray-800 font-sans">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Thank You | CueRide
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+ </head>
+ <body class="bg-green-50 text-gray-800 font-sans">
+  <header class="bg-white border-b border-gray-200 p-4">
+   <div class="flex justify-between items-center max-w-6xl mx-auto">
+    <a class="font-bold text-lg text-blue-600" href="/index.html">
+     CueRide
+    </a>
+    <button class="md:hidden text-sm text-blue-600 border px-2 py-1 rounded" onclick="toggleNav()">
+     Menu
+    </button>
+    <nav class="hidden md:flex space-x-4 text-sm md:block" id="nav-menu">
+     <a href="/riders.html">
+      Riders
+     </a>
+     <a href="/drivers.html">
+      Drivers
+     </a>
+     <a class="text-blue-600 font-semibold" href="/sponsor-a-ride.html">
+      Sponsor a Ride
+     </a>
+     <a href="/sponsors.html">
+      Become a Sponsor
+     </a>
+     <a href="/about.html">
+      About
+     </a>
+     <a href="/contact.html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <script>
+   function toggleNav() {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.toggle('hidden');
+  }
+  </script>
   <main class="max-w-xl mx-auto p-8 text-center">
-    <h1 class="text-3xl font-bold text-green-700 mb-4">Thank You!</h1>
-    <p class="text-lg mb-4">Your donation has just helped someone in recovery take a life-changing ride.</p>
-    <p class="text-sm mb-6">You’ll receive an email receipt shortly. We appreciate your support.</p>
-    <a href="/sponsor-a-ride.html" class="text-blue-600 underline">Sponsor another ride</a> |
-    <a href="https://cuerideapp.com" class="text-blue-600 underline">Return to homepage</a>
+   <h1 class="text-3xl font-bold text-green-700 mb-4">
+    Thank You!
+   </h1>
+   <p class="text-lg mb-4">
+    Your donation has just helped someone in recovery take a life-changing ride.
+   </p>
+   <p class="text-sm mb-6">
+    You’ll receive an email receipt shortly. We appreciate your support.
+   </p>
+   <a class="text-blue-600 underline" href="/sponsor-a-ride.html">
+    Sponsor another ride
+   </a>
+   |
+   <a class="text-blue-600 underline" href="https://cuerideapp.com">
+    Return to homepage
+   </a>
   </main>
-</body>
+  <footer class="bg-slate-50 text-sm text-gray-500 text-center py-6 mt-12 border-t">
+   <div class="space-x-4">
+    <a class="underline" href="/assets/CueRide_Press_Kit.pdf">
+     Press Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Sponsor_Kit.pdf">
+     Sponsor Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Investor_Brief.pdf">
+     Investor Info
+    </a>
+    <a class="underline text-blue-600" href="/sponsor-a-ride.html">
+     Donate
+    </a>
+   </div>
+   <p class="mt-2">
+    © 2025 CueRide – A Cueverse Industries Brand
+   </p>
+  </footer>
+ </body>
 </html>

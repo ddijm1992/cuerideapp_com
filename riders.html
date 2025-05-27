@@ -10,6 +10,42 @@
   </script>
  </head>
  <body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="bg-white border-b border-gray-200 p-4">
+   <div class="flex justify-between items-center max-w-6xl mx-auto">
+    <a class="font-bold text-lg text-blue-600" href="/index.html">
+     CueRide
+    </a>
+    <button class="md:hidden text-sm text-blue-600 border px-2 py-1 rounded" onclick="toggleNav()">
+     Menu
+    </button>
+    <nav class="hidden md:flex space-x-4 text-sm md:block" id="nav-menu">
+     <a href="/riders.html">
+      Riders
+     </a>
+     <a href="/drivers.html">
+      Drivers
+     </a>
+     <a class="text-blue-600 font-semibold" href="/sponsor-a-ride.html">
+      Sponsor a Ride
+     </a>
+     <a href="/sponsors.html">
+      Become a Sponsor
+     </a>
+     <a href="/about.html">
+      About
+     </a>
+     <a href="/contact.html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <script>
+   function toggleNav() {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.toggle('hidden');
+  }
+  </script>
   <main class="max-w-xl mx-auto p-6">
    <h1 class="text-2xl font-bold text-center mb-4">
     Need a Safe, Sober Ride?
@@ -54,19 +90,6 @@
     </span>
    </div>
   </main>
-  <footer class="text-center text-sm text-gray-500 mt-12 border-t pt-4">
-   <a class="underline mx-2" href="/assets/pdf/CueRide_Press_Kit.pdf">
-    Press Kit
-   </a>
-   |
-   <a class="underline mx-2" href="/assets/pdf/CueRide_Sponsor_Kit.pdf">
-    Sponsor a Ride
-   </a>
-   |
-   <a class="underline mx-2" href="/assets/pdf/CueRide_Investor_Brief.pdf">
-    Investor Info
-   </a>
-  </footer>
   <div class="flex justify-center space-x-4 mt-6 text-sm text-gray-600">
    <span>
     ✅ Certified Sober Drivers
@@ -90,6 +113,25 @@
    <a class="underline mx-2" href="/assets/CueRide_Investor_Brief.pdf">
     Investor Info
    </a>
+  </footer>
+  <footer class="bg-slate-50 text-sm text-gray-500 text-center py-6 mt-12 border-t">
+   <div class="space-x-4">
+    <a class="underline" href="/assets/CueRide_Press_Kit.pdf">
+     Press Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Sponsor_Kit.pdf">
+     Sponsor Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Investor_Brief.pdf">
+     Investor Info
+    </a>
+    <a class="underline text-blue-600" href="/sponsor-a-ride.html">
+     Donate
+    </a>
+   </div>
+   <p class="mt-2">
+    © 2025 CueRide – A Cueverse Industries Brand
+   </p>
   </footer>
  </body>
 </html>

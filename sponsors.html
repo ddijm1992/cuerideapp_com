@@ -1,43 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Corporate Sponsors | CueRide</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-slate-900 font-sans">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Corporate Sponsors | CueRide
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+ </head>
+ <body class="bg-white text-slate-900 font-sans">
+  <header class="bg-white border-b border-gray-200 p-4">
+   <div class="flex justify-between items-center max-w-6xl mx-auto">
+    <a class="font-bold text-lg text-blue-600" href="/index.html">
+     CueRide
+    </a>
+    <button class="md:hidden text-sm text-blue-600 border px-2 py-1 rounded" onclick="toggleNav()">
+     Menu
+    </button>
+    <nav class="hidden md:flex space-x-4 text-sm md:block" id="nav-menu">
+     <a href="/riders.html">
+      Riders
+     </a>
+     <a href="/drivers.html">
+      Drivers
+     </a>
+     <a class="text-blue-600 font-semibold" href="/sponsor-a-ride.html">
+      Sponsor a Ride
+     </a>
+     <a href="/sponsors.html">
+      Become a Sponsor
+     </a>
+     <a href="/about.html">
+      About
+     </a>
+     <a href="/contact.html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <script>
+   function toggleNav() {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.toggle('hidden');
+  }
+  </script>
   <main class="max-w-4xl mx-auto p-8">
-    <h1 class="text-3xl font-bold text-center mb-4">Become a CueRide Sponsor</h1>
-    <p class="text-center text-lg mb-6">Support safe, sober transportation for people in recovery. Your sponsorship helps fund rides, build trust, and save lives.</p>
-
-    <section class="bg-slate-50 p-6 rounded shadow mb-6">
-      <h2 class="text-xl font-semibold mb-2">What Your Sponsorship Supports</h2>
-      <ul class="list-disc list-inside space-y-1 text-sm">
-        <li>Free or discounted rides for recovery, job access, court, or family reunification</li>
-        <li>Expansion of CueRide in new cities and underserved communities</li>
-        <li>Ongoing driver training and community outreach</li>
-      </ul>
-    </section>
-
-    <section class="bg-slate-100 p-6 rounded shadow mb-6">
-      <h2 class="text-xl font-semibold mb-2">Ways to Partner</h2>
-      <ul class="list-disc list-inside space-y-1 text-sm">
-        <li>Sponsor 100+ rides with a single donation</li>
-        <li>Offer recurring support for a local recovery center</li>
-        <li>Feature CueRide as your nonprofit partner brand</li>
-      </ul>
-    </section>
-
-    <div class="text-center mb-6">
-      <a href="/assets/CueRide_Sponsor_Kit.pdf" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Download Sponsor Kit</a>
-    </div>
-
-    <div class="text-center text-sm">
-      <p>Want to discuss a custom partnership?</p>
-      <a href="mailto:sponsor@cuerideapp.com" class="text-blue-600 underline">Email sponsor@cuerideapp.com</a>
-    </div>
+   <h1 class="text-3xl font-bold text-center mb-4">
+    Become a CueRide Sponsor
+   </h1>
+   <p class="text-center text-lg mb-6">
+    Support safe, sober transportation for people in recovery. Your sponsorship helps fund rides, build trust, and save lives.
+   </p>
+   <section class="bg-slate-50 p-6 rounded shadow mb-6">
+    <h2 class="text-xl font-semibold mb-2">
+     What Your Sponsorship Supports
+    </h2>
+    <ul class="list-disc list-inside space-y-1 text-sm">
+     <li>
+      Free or discounted rides for recovery, job access, court, or family reunification
+     </li>
+     <li>
+      Expansion of CueRide in new cities and underserved communities
+     </li>
+     <li>
+      Ongoing driver training and community outreach
+     </li>
+    </ul>
+   </section>
+   <section class="bg-slate-100 p-6 rounded shadow mb-6">
+    <h2 class="text-xl font-semibold mb-2">
+     Ways to Partner
+    </h2>
+    <ul class="list-disc list-inside space-y-1 text-sm">
+     <li>
+      Sponsor 100+ rides with a single donation
+     </li>
+     <li>
+      Offer recurring support for a local recovery center
+     </li>
+     <li>
+      Feature CueRide as your nonprofit partner brand
+     </li>
+    </ul>
+   </section>
+   <div class="text-center mb-6">
+    <a class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700" href="/assets/CueRide_Sponsor_Kit.pdf" target="_blank">
+     Download Sponsor Kit
+    </a>
+   </div>
+   <div class="text-center text-sm">
+    <p>
+     Want to discuss a custom partnership?
+    </p>
+    <a class="text-blue-600 underline" href="mailto:sponsor@cuerideapp.com">
+     Email sponsor@cuerideapp.com
+    </a>
+   </div>
   </main>
-</body>
+  <footer class="bg-slate-50 text-sm text-gray-500 text-center py-6 mt-12 border-t">
+   <div class="space-x-4">
+    <a class="underline" href="/assets/CueRide_Press_Kit.pdf">
+     Press Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Sponsor_Kit.pdf">
+     Sponsor Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Investor_Brief.pdf">
+     Investor Info
+    </a>
+    <a class="underline text-blue-600" href="/sponsor-a-ride.html">
+     Donate
+    </a>
+   </div>
+   <p class="mt-2">
+    © 2025 CueRide – A Cueverse Industries Brand
+   </p>
+  </footer>
+ </body>
 </html>

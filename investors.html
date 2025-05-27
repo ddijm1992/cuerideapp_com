@@ -10,31 +10,47 @@
   </script>
  </head>
  <body class="bg-white text-gray-900">
+  <header class="bg-white border-b border-gray-200 p-4">
+   <div class="flex justify-between items-center max-w-6xl mx-auto">
+    <a class="font-bold text-lg text-blue-600" href="/index.html">
+     CueRide
+    </a>
+    <button class="md:hidden text-sm text-blue-600 border px-2 py-1 rounded" onclick="toggleNav()">
+     Menu
+    </button>
+    <nav class="hidden md:flex space-x-4 text-sm md:block" id="nav-menu">
+     <a href="/riders.html">
+      Riders
+     </a>
+     <a href="/drivers.html">
+      Drivers
+     </a>
+     <a class="text-blue-600 font-semibold" href="/sponsor-a-ride.html">
+      Sponsor a Ride
+     </a>
+     <a href="/sponsors.html">
+      Become a Sponsor
+     </a>
+     <a href="/about.html">
+      About
+     </a>
+     <a href="/contact.html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <script>
+   function toggleNav() {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.toggle('hidden');
+  }
+  </script>
   <header class="bg-white shadow">
    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
     <a class="text-2xl font-bold text-blue-600" href="/index.html">
      CueRide
     </a>
-    <nav class="space-x-4 text-sm">
-     <a class="text-gray-700 hover:text-blue-600" href="/about.html">
-      About
-     </a>
-     <a class="text-gray-700 hover:text-blue-600" href="/how-it-works.html">
-      How It Works
-     </a>
-     <a class="text-gray-700 hover:text-blue-600" href="/riders.html">
-      Riders
-     </a>
-     <a class="text-gray-700 hover:text-blue-600" href="/drivers.html">
-      Drivers
-     </a>
-     <a class="text-gray-700 hover:text-blue-600" href="/sponsor.html">
-      Sponsor
-     </a>
-     <a class="text-gray-700 hover:text-blue-600" href="/contact.html">
-      Contact
-     </a>
-    </nav>
    </div>
   </header>
   <main class="px-6 py-12 max-w-3xl mx-auto">
@@ -48,34 +64,6 @@
     📄 View Investor Brief
    </a>
   </main>
-  <footer class="bg-gray-100 py-6 mt-12 text-center text-sm text-gray-600">
-   <p>
-    © 2025 CueRide, a division of Cueverse Industries
-   </p>
-   <div class="mt-2 space-x-4">
-    <a href="/investors.html">
-     Investors
-    </a>
-    <a href="/partners.html">
-     Partners
-    </a>
-    <a href="/media.html">
-     Media
-    </a>
-    <a href="/careers.html">
-     Careers
-    </a>
-    <a href="/faqs.html">
-     FAQs
-    </a>
-    <a href="/privacy.html">
-     Privacy
-    </a>
-    <a href="/terms.html">
-     Terms
-    </a>
-   </div>
-  </footer>
   <div class="flex justify-center space-x-4 mt-6 text-sm text-gray-600">
    <span>
     ✅ Certified Sober Drivers
@@ -99,6 +87,25 @@
    <a class="underline mx-2" href="/assets/CueRide_Investor_Brief.pdf">
     Investor Info
    </a>
+  </footer>
+  <footer class="bg-slate-50 text-sm text-gray-500 text-center py-6 mt-12 border-t">
+   <div class="space-x-4">
+    <a class="underline" href="/assets/CueRide_Press_Kit.pdf">
+     Press Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Sponsor_Kit.pdf">
+     Sponsor Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Investor_Brief.pdf">
+     Investor Info
+    </a>
+    <a class="underline text-blue-600" href="/sponsor-a-ride.html">
+     Donate
+    </a>
+   </div>
+   <p class="mt-2">
+    © 2025 CueRide – A Cueverse Industries Brand
+   </p>
   </footer>
  </body>
 </html>

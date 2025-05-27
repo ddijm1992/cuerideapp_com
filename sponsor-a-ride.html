@@ -1,37 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sponsor a Ride | CueRide</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 font-sans text-gray-900">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Sponsor a Ride | CueRide
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+ </head>
+ <body class="bg-gray-100 font-sans text-gray-900">
+  <header class="bg-white border-b border-gray-200 p-4">
+   <div class="flex justify-between items-center max-w-6xl mx-auto">
+    <a class="font-bold text-lg text-blue-600" href="/index.html">
+     CueRide
+    </a>
+    <button class="md:hidden text-sm text-blue-600 border px-2 py-1 rounded" onclick="toggleNav()">
+     Menu
+    </button>
+    <nav class="hidden md:flex space-x-4 text-sm md:block" id="nav-menu">
+     <a href="/riders.html">
+      Riders
+     </a>
+     <a href="/drivers.html">
+      Drivers
+     </a>
+     <a class="text-blue-600 font-semibold" href="/sponsor-a-ride.html">
+      Sponsor a Ride
+     </a>
+     <a href="/sponsors.html">
+      Become a Sponsor
+     </a>
+     <a href="/about.html">
+      About
+     </a>
+     <a href="/contact.html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <script>
+   function toggleNav() {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.toggle('hidden');
+  }
+  </script>
   <main class="max-w-3xl mx-auto p-8 bg-white mt-10 rounded shadow-md">
-    <h1 class="text-3xl font-bold text-center mb-4">Sponsor a Ride</h1>
-    <p class="text-center mb-6 text-lg">Every dollar goes toward helping someone in recovery get where they need to go—safely, soberly, and with dignity.</p>
-    <blockquote class="italic text-center text-blue-600 mb-8">"Your sponsorship could be the ride that gets someone to their first meeting, or back to their family." – CueRide Cares</blockquote>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-      <div class="bg-slate-50 p-4 border rounded shadow">
-        <h2 class="text-xl font-semibold mb-2">Short Ride</h2>
-        <p class="mb-4 text-sm">Covers a ride to a local meeting, job, or recovery check-in.</p>
-        <a href="https://donate.stripe.com/eVqaEY8Nbdjsclf5w28bS00" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Donate $25</a>
-      </div>
-      <div class="bg-slate-50 p-4 border rounded shadow">
-        <h2 class="text-xl font-semibold mb-2">City Ride</h2>
-        <p class="mb-4 text-sm">Supports a full ride across town to vital services or programs.</p>
-        <a href="https://buy.stripe.com/eVqcN61kJdjs0Cx9Mi8bS01" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Donate $50</a>
-      </div>
-      <div class="bg-slate-50 p-4 border rounded shadow">
-        <h2 class="text-xl font-semibold mb-2">Return Home</h2>
-        <p class="mb-4 text-sm">Covers a long-distance or emergency ride back to family or recovery.</p>
-        <a href="https://buy.stripe.com/cNi7sM0gF1AK70V2jQ8bS02" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Donate $100</a>
-      </div>
+   <h1 class="text-3xl font-bold text-center mb-4">
+    Sponsor a Ride
+   </h1>
+   <p class="text-center mb-6 text-lg">
+    Every dollar goes toward helping someone in recovery get where they need to go—safely, soberly, and with dignity.
+   </p>
+   <blockquote class="italic text-center text-blue-600 mb-8">
+    "Your sponsorship could be the ride that gets someone to their first meeting, or back to their family." – CueRide Cares
+   </blockquote>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+    <div class="bg-slate-50 p-4 border rounded shadow">
+     <h2 class="text-xl font-semibold mb-2">
+      Short Ride
+     </h2>
+     <p class="mb-4 text-sm">
+      Covers a ride to a local meeting, job, or recovery check-in.
+     </p>
+     <a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://donate.stripe.com/eVqaEY8Nbdjsclf5w28bS00" target="_blank">
+      Donate $25
+     </a>
     </div>
-
-    <p class="text-center mt-8 text-sm text-gray-500">All donations are processed securely by Stripe. CueRide is a mission-driven project supporting safe, sober transportation nationwide.</p>
+    <div class="bg-slate-50 p-4 border rounded shadow">
+     <h2 class="text-xl font-semibold mb-2">
+      City Ride
+     </h2>
+     <p class="mb-4 text-sm">
+      Supports a full ride across town to vital services or programs.
+     </p>
+     <a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://buy.stripe.com/eVqcN61kJdjs0Cx9Mi8bS01" target="_blank">
+      Donate $50
+     </a>
+    </div>
+    <div class="bg-slate-50 p-4 border rounded shadow">
+     <h2 class="text-xl font-semibold mb-2">
+      Return Home
+     </h2>
+     <p class="mb-4 text-sm">
+      Covers a long-distance or emergency ride back to family or recovery.
+     </p>
+     <a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://buy.stripe.com/cNi7sM0gF1AK70V2jQ8bS02" target="_blank">
+      Donate $100
+     </a>
+    </div>
+   </div>
+   <p class="text-center mt-8 text-sm text-gray-500">
+    All donations are processed securely by Stripe. CueRide is a mission-driven project supporting safe, sober transportation nationwide.
+   </p>
   </main>
-</body>
+  <footer class="bg-slate-50 text-sm text-gray-500 text-center py-6 mt-12 border-t">
+   <div class="space-x-4">
+    <a class="underline" href="/assets/CueRide_Press_Kit.pdf">
+     Press Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Sponsor_Kit.pdf">
+     Sponsor Kit
+    </a>
+    <a class="underline" href="/assets/CueRide_Investor_Brief.pdf">
+     Investor Info
+    </a>
+    <a class="underline text-blue-600" href="/sponsor-a-ride.html">
+     Donate
+    </a>
+   </div>
+   <p class="mt-2">
+    © 2025 CueRide – A Cueverse Industries Brand
+   </p>
+  </footer>
+ </body>
 </html>
