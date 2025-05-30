@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Empire Enhancements -->
+    <link rel="icon" href="/assets/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = () => {
+            AOS.init({ once: true });
+            document.getElementById("empire-loader")?.remove();
+        };
+    </script>
+    
+
+    <meta name="description" content="Cueverse Industries - Building the Future of Innovation">
+    <meta property="og:title" content="Cueverse Industries" />
+    <meta property="og:description" content="Driving innovation across transportation, sports, AI, and media." />
+    <meta property="og:image" content="/assets/og-cueverse.jpg" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <link rel="stylesheet" href="/shared/style/empire.css">
+    <meta charset="UTF-8">
+    <title>User Login - CueRide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+    <!-- Empire Loading Spinner -->
+    <div id="empire-loader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;justify-content:center;align-items:center;z-index:9999;">
+        <div style="border:6px solid #f3f3f3;border-top:6px solid #3498db;border-radius:50%;width:50px;height:50px;animation:spin 1s linear infinite;"></div>
+    </div>
+    <style>@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
+    
+    <h1>User Login</h1>
+    <form action="/user-dashboard.html" method="post">
+        <label>Email:</label><input type="email" name="email" required /><br />
+        <label>Password:</label><input type="password" name="password" required /><br />
+        <button type="submit">Login</button>
+    </form>
+    <p>By logging in, you agree to our <a href="/terms.html">Terms & Conditions</a>.</p>
+</body>
+</html>

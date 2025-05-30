@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+    <!-- Empire Enhancements -->
+    <link rel="icon" href="/assets/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = () => {
+            AOS.init({ once: true });
+            document.getElementById("empire-loader")?.remove();
+        };
+    </script>
+    
+
+    <meta name="description" content="Cueverse Industries - Building the Future of Innovation">
+    <meta property="og:title" content="Cueverse Industries" />
+    <meta property="og:description" content="Driving innovation across transportation, sports, AI, and media." />
+    <meta property="og:image" content="/assets/og-cueverse.jpg" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <link rel="stylesheet" href="/shared/style/empire.css">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Drive with CueRide
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="/assets/css/style.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-slate-50 text-slate-900 font-sans">
+
+    <!-- Empire Loading Spinner -->
+    <div id="empire-loader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;justify-content:center;align-items:center;z-index:9999;">
+        <div style="border:6px solid #f3f3f3;border-top:6px solid #3498db;border-radius:50%;width:50px;height:50px;animation:spin 1s linear infinite;"></div>
+    </div>
+    <style>@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
+    
+  <header class="bg-white border-b border-gray-200 p-4">
+
+    <!-- Empire Enhancements -->
+    <link rel="icon" href="/assets/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = () => {
+            AOS.init({ once: true });
+            document.getElementById("empire-loader")?.remove();
+        };
+    </script>
+    
+
+    <meta name="description" content="Cueverse Industries - Building the Future of Innovation">
+    <meta property="og:title" content="Cueverse Industries" />
+    <meta property="og:description" content="Driving innovation across transportation, sports, AI, and media." />
+    <meta property="og:image" content="/assets/og-cueverse.jpg" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <link rel="stylesheet" href="/shared/style/empire.css">
+   <div class="flex justify-between items-center max-w-6xl mx-auto">
+    <a class="font-bold text-lg text-blue-600" href="/index.html">
+     CueRide
+    </a>
+    <button class="md:hidden text-sm text-blue-600 border px-2 py-1 rounded" onclick="toggleNav()">
+     Menu
+    </button>
+    <nav class="hidden md:flex space-x-4 text-sm md:block" id="nav-menu">
+     <a href="/riders.html">
+      Riders
+     </a>
+     <a href="/drivers.html">
+      Drivers
+     </a>
+     <a class="text-blue-600 font-semibold" href="/sponsor-a-ride.html">
+      Sponsor a Ride
+     </a>
+     <a href="/sponsors.html">
+      Become a Sponsor
+     </a>
+     <a href="/about.html">
+      About
+     </a>
+     <a href="/contact.html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="max-w-2xl mx-auto p-6">
+   <h1 class="text-3xl font-bold text-center mb-4">
+    Drive with Purpose. Drive with CueRide.
+   </h1>
+   <p class="text-center mb-6 text-lg">
+    We are a sober-first rideshare platform built by the recovery community, for the recovery community. Every ride is a chance to change a life—including yours.
+   </p>
+   <blockquote class="italic text-center text-blue-700 mb-6">
+    "Getting home safely shouldn’t depend on luck. It should depend on trust." – Donivan Montoya
+   </blockquote>
+   <form action="https://formspree.io/f/yourformid" class="bg-white p-6 rounded shadow space-y-4" method="POST">
+    <input class="w-full p-2 border rounded" name="name" placeholder="Full Name" required="" type="text"/>
+    <input class="w-full p-2 border rounded" name="email" placeholder="Email Address" required="" type="email"/>
+    <input class="w-full p-2 border rounded" name="phone" placeholder="Phone Number" required="" type="tel"/>
+    <textarea class="w-full p-2 border rounded" name="message" placeholder="Tell us about your recovery or why you want to drive with CueRide"></textarea>
+    <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="submit">
+     Join the Movement
+    </button>
+   </form>
+   <div class="flex justify-center space-x-4 mt-6 text-sm text-gray-600">
+    <span>
+     ✅ Certified Sober Drivers
+    </span>
+    <span>
+     🕊️ Recovery-Friendly
+    </span>
+    <span>
+     🔒 Safe &amp; Secure
+    </span>
+   </div>
+  </main>
+  <div class="flex justify-center space-x-4 mt-6 text-sm text-gray-600">
+   <span>
+    ✅ Certified Sober Drivers
+   </span>
+   <span>
+    🕊️ Recovery-Friendly
+   </span>
+   <span>
+    🔒 Safe &amp; Secure
+   </span>
+  </div>
+  <footer class="text-center text-sm text-gray-500 mt-12 border-t pt-4">
+   <a class="underline mx-2" href="/assets/CueRide_Press_Kit.pdf">
+    Press Kit
+   </a>
+   |
+   <a class="underline mx-2" href="/assets/CueRide_Sponsor_Kit.pdf">
+    Sponsor a Ride
+   </a>
+   |
+   <a class="underline mx-2" href="/assets/CueRide_Investor_Brief.pdf">
+    Investor Info
+   </a>
+   <div class="footer-legal-links">
+    <a href="/terms.html">
+     Terms of Service
+    </a>
+    |
+    <a href="/privacy.html">
+     Privacy Policy
+    </a>
+    |
+    <a href="/sponsor.html">
+     Sponsor a Ride
+    </a>
+    |
+    <a href="/contact.html">
+     Contact
+    </a>
+   </div>
+  </footer>
+  <script src="/assets/js/main.js">
+  </script>
+ </body>
+</html>
