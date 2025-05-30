@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white min-h-screen flex flex-col">
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold"><a href="/">CueRide</a></h1>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="/auth/login.html" class="hover:underline">Login</a>
+        <a href="/auth/register.html" class="hover:underline">Sign Up</a>
+        <a href="/dashboard/user.html" class="hover:underline">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-1 max-w-4xl mx-auto px-6 py-12">
+    <h2 class='text-2xl font-bold mb-4'>Request a Ride</h2><form class='space-y-4'><input class='w-full p-2 border' placeholder='Pickup Location'><input class='w-full p-2 border' placeholder='Dropoff Location'><select class='w-full p-2 border'><option>Standard</option><option>Accessible</option><option>Women+ Only</option></select><button type='submit' class='bg-blue-600 text-white px-4 py-2 rounded'>Request Ride</button></form>
+  </main>
+  
+<footer class="bg-gray-100 dark:bg-gray-800 text-sm text-gray-700 dark:text-gray-300 mt-16 py-10">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Driver</h3><ul>
+      <li><a href="/auth/register.html" class="hover:underline">Become a Driver</a></li>
+      <li><a href="/driver_onboarding.html" class="hover:underline">Onboarding Guide</a></li>
+      <li><a href="/dashboard/driver.html" class="hover:underline">Driver Dashboard</a></li>
+      <li><a href="/faqs.html" class="hover:underline">FAQ</a></li>
+    </ul></div>
+    <div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Rider</h3><ul>
+      <li><a href="/ride/request.html" class="hover:underline">Request a Ride</a></li>
+      <li><a href="/dashboard/user.html" class="hover:underline">Your Rides</a></li>
+      <li><a href="/about.html" class="hover:underline">About Us</a></li>
+      <li><a href="/media.html" class="hover:underline">Media Kit</a></li>
+    </ul></div>
+    <div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Company</h3><ul>
+      <li><a href="/careers.html" class="hover:underline">Careers</a></li>
+      <li><a href="/sponsor-a-ride.html" class="hover:underline">Sponsor a Ride</a></li>
+      <li><a href="/investors.html" class="hover:underline">Investor Info</a></li>
+      <li><a href="/partners.html" class="hover:underline">Partners</a></li>
+    </ul></div>
+    <div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Legal</h3><ul>
+      <li><a href="/legal/terms.html" class="hover:underline">Terms</a></li>
+      <li><a href="/legal/privacy.html" class="hover:underline">Privacy</a></li>
+      <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+    </ul></div>
+  </div>
+  <div class="text-center text-xs mt-8 text-gray-500 dark:text-gray-400">
+    &copy; 2025 CueRide. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
