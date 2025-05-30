@@ -1,12 +1,19 @@
-import { db, auth } from './firebase.js';
+import { db, auth } from '../firebase/firebase.js';
 import {
   collection, query, where, onSnapshot, updateDoc, doc
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const rideList = document.getElementById("ride-list");
 
+console.log("Driver dashboard script loaded");
+
 auth.onAuthStateChanged(user => {
-  if (!user) return;
+  if (!user) {
+    console.warn("Not logged in");
+    return;
+  }
+
+  console.log("Logged in as", user.uid);
 
   const q = query(collection(db, "rides"), where("status", "==", "pending"));
   onSnapshot(q, snapshot => {
