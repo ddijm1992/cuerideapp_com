@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Driver Dashboard - CueRide</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver Dashboard | CueRide</title>
+  <link rel="stylesheet" href="../styles/dashboard.css" />
 </head>
 <body>
-  <h2>Driver Dashboard</h2>
-  <div id="ride-list"></div>
+  <header>
+    <h1>CueRide Driver Dashboard</h1>
+    <nav><a href="../index.html">← Back to Home</a></nav>
+  </header>
+
+  <main>
+    <section id="ride-list" class="ride-list">Loading rides...</section>
+  </main>
+
   <script type="module" src="../firebase/firebase.js"></script>
   <script type="module" src="dashboard_driver.js"></script>
 </body>

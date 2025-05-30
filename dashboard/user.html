@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Admin Dashboard - CueRide</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | CueRide</title>
+  <link rel="stylesheet" href="../styles/dashboard.css" />
 </head>
 <body>
-  <h2>Admin Dashboard</h2>
-  <div id="data-panel"></div>
-  <script type="module" src="/firebase/firebase.js"></script>
-  <script type="module" src="/firebase/dashboard_user.js"></script>
+  <header>
+    <h1>CueRide Admin Dashboard</h1>
+    <nav><a href="../index.html">← Back to Home</a></nav>
+  </header>
+
+  <main>
+    <section id="data-panel" class="admin-panel">Loading user data...</section>
+  </main>
+
+  <script type="module" src="../firebase/firebase.js"></script>
+  <script type="module" src="dashboard_user.js"></script>
 </body>
 </html>
