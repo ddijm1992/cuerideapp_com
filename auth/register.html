@@ -1,71 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CueRide - Safer Rides</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="/manifest.json" rel="manifest"/>
-<link href="/favicon.png" rel="icon"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - CueRide</title>
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white min-h-screen flex flex-col">
-<header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white shadow">
-<div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-<h1 class="text-2xl font-bold"><a href="/">CueRide</a></h1>
-<nav class="space-x-6 text-sm font-semibold">
-<a class="hover:underline" href="/auth/login.html">Login</a>
-<a class="hover:underline" href="/auth/register.html">Sign Up</a>
-<a class="hover:underline" href="/dashboard/user.html">Dashboard</a>
-</nav>
-</div>
-</header>
-<main class="flex-1 max-w-4xl mx-auto px-6 py-12">
-<h2 class="text-4xl font-bold mb-4">Safer Streets. Sober Rides. Community First.</h2>
-<p class="text-lg mb-6 text-gray-600 dark:text-gray-300">
-  CueRide is the first sober-first ride platform designed for local impact, community safety, and responsible mobility.
-</p>
-<div class="flex gap-4 flex-wrap justify-center">
-<a class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg" href="/ride/request.html">Request a Ride</a>
-<a class="px-6 py-3 bg-gray-100 dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-lg" href="/auth/register.html">Become a Driver</a>
-</div>
-<div class="mt-6 text-sm text-gray-600 dark:text-gray-300">
-<label>
-<input class="mr-2 mt-1 h-4 w-4 text-blue-600 border-gray-300" id="agree" name="agree" required="" type="checkbox"/>
-      I have read and agree to the
-      <a class="underline text-blue-600" href="/legal/terms.html" target="_blank">Terms of Service</a> and
-      <a class="underline text-blue-600" href="/legal/privacy.html" target="_blank">Privacy Policy</a>.
-    </label>
-</div></main>
-<footer class="bg-gray-100 dark:bg-gray-800 text-sm text-gray-700 dark:text-gray-300 mt-16 py-10">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
-<div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Driver</h3><ul>
-<li><a class="hover:underline" href="/auth/register.html">Become a Driver</a></li>
-<li><a class="hover:underline" href="/driver_onboarding.html">Onboarding Guide</a></li>
-<li><a class="hover:underline" href="/dashboard/driver.html">Driver Dashboard</a></li>
-<li><a class="hover:underline" href="/faqs.html">FAQ</a></li>
-</ul></div>
-<div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Rider</h3><ul>
-<li><a class="hover:underline" href="/ride/request.html">Request a Ride</a></li>
-<li><a class="hover:underline" href="/dashboard/user.html">Your Rides</a></li>
-<li><a class="hover:underline" href="/about.html">About Us</a></li>
-<li><a class="hover:underline" href="/media.html">Media Kit</a></li>
-</ul></div>
-<div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Company</h3><ul>
-<li><a class="hover:underline" href="/careers.html">Careers</a></li>
-<li><a class="hover:underline" href="/sponsor-a-ride.html">Sponsor a Ride</a></li>
-<li><a class="hover:underline" href="/investors.html">Investor Info</a></li>
-<li><a class="hover:underline" href="/partners.html">Partners</a></li>
-</ul></div>
-<div><h3 class="font-bold text-gray-800 dark:text-white mb-2">Legal</h3><ul>
-<li><a class="hover:underline" href="/legal/terms.html">Terms</a></li>
-<li><a class="hover:underline" href="/legal/privacy.html">Privacy</a></li>
-<li><a class="hover:underline" href="/contact.html">Contact</a></li>
-</ul></div>
-</div>
-<div class="text-center text-xs mt-8 text-gray-500 dark:text-gray-400">
-    © 2025 CueRide. All rights reserved.
-  </div>
-</footer>
+<body>
+  <h2>Create Your CueRide Account</h2>
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="password" placeholder="Password" />
+  <select id="role">
+    <option value="rider">Rider</option>
+    <option value="driver">Driver</option>
+  </select>
+  <button onclick="register()">Register</button>
+
+  <script type="module" src="/firebase/firebase.js"></script>
+  <script type="module" src="/firebase/register.js"></script>
 </body>
 </html>
