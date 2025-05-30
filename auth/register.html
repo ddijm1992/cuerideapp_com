@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - CueRide</title>
+</head>
+<body>
+  <h2>Create Your CueRide Account</h2>
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="password" placeholder="Password" />
+  <select id="role">
+    <option value="rider">Rider</option>
+    <option value="driver">Driver</option>
+  </select>
+  <button onclick="register()">Register</button>
+
+  <script type="module" src="/firebase/firebase.js"></script>
+  <script type="module" src="/firebase/register.js"></script>
+</body>
+</html>
